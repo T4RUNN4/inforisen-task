@@ -1,5 +1,6 @@
 import Hero from "@/sections/Hero";
 import KpiContainer from "@/sections/KPI";
+import PaymentMethods from "@/sections/PaymentMethods";
 import Services from "@/sections/Service";
 import WorkingProcessSection from "@/sections/WorkingProcessSection";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <KpiContainer />
       <Services />
       <WorkingProcessSection />
+      <PaymentMethods />
     </>
   );
 }
