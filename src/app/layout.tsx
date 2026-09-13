@@ -1,29 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Inter } from "next/font/google";
+import Navbar from "@/sections/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Inforisen",
-  description: "Best SMM Panel in the Bangladesh. Buy Instagram Followers, Likes, Views, YouTube Subscribers, TikTok Followers, and more.",
+  description:
+    "Best SMM Panel in the Bangladesh. Buy Instagram Followers, Likes, Views, YouTube Subscribers, TikTok Followers, and more.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      data-theme="light"
+      className={`${inter.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
