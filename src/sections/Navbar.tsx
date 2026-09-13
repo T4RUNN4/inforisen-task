@@ -1,4 +1,6 @@
 import NavlinkContainer from "@/components/NavLinkContainer";
+import PrimaryButton from "@/components/PrimaryButton";
+import SecondaryButton from "@/components/SecondaryButton";
 
 export default function Navbar() {
   return (
@@ -27,11 +29,12 @@ export default function Navbar() {
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex lg:items-center lg:justify-center">
         <NavlinkContainer isMobile={false} />
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-4">
+        <SecondaryButton label="Sign In" />
+        <PrimaryButton label="Sign Up" />
       </div>
     </div>
   );
