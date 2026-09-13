@@ -1,5 +1,7 @@
+import Hero from "@/sections/Hero";
+
 export default function Home() {
   return (
-    <p>Hello World!</p>
+    <Hero />
   );
 }
