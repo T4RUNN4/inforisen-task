@@ -27,7 +27,9 @@ export default function Navbar() {
           </div>
           <NavlinkContainer isMobile={true} />
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="bg-white px-6 py-2 rounded-xl border border-gray-100 shadow-sm font-bold text-orange-500 tracking-wider">
+          LOGO
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex lg:items-center lg:justify-center">
         <NavlinkContainer isMobile={false} />
