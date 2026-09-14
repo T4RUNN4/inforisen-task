@@ -1,4 +1,6 @@
 import Advantage from "@/sections/Advantage";
+import CtaBanner from "@/sections/CTABanner";
+import FAQ from "@/sections/FAQ";
 import GrowthSection from "@/sections/GrowthSection";
 import Hero from "@/sections/Hero";
 import KpiContainer from "@/sections/KPI";
@@ -16,6 +18,8 @@ export default function Home() {
       <PaymentMethods />
       <GrowthSection />
       <Advantage />
+      <FAQ />
+      <CtaBanner />
     </>
   );
 }
