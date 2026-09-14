@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-      <main className="max-w-7xl mx-auto px-28 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <main className="max-w-7xl mx-auto px-8 md:px-28 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-6 space-y-6">
           <div className="flex items-center space-x-2 text-sm text-gray-700">
             <span className="text-emerald-500 text-lg">★</span>
