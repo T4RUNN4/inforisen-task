@@ -1,3 +1,4 @@
+import Advantage from "@/sections/Advantage";
 import GrowthSection from "@/sections/GrowthSection";
 import Hero from "@/sections/Hero";
 import KpiContainer from "@/sections/KPI";
@@ -14,6 +15,7 @@ export default function Home() {
       <WorkingProcessSection />
       <PaymentMethods />
       <GrowthSection />
+      <Advantage />
     </>
   );
 }
